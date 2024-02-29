@@ -127,7 +127,6 @@ function clientEvents(client, client_id) {
 
   client.on("remote_session_saved", () => {
     console.log("remote_session_saved");
-    client.initialize();
     clients[client_id] = client;
   });
 
