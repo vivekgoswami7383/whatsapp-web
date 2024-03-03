@@ -93,7 +93,7 @@ export const sendMessage = async (req, res) => {
             "--disable-setuid-sandbox",
             "--js-flags=--expose-gc",
           ],
-          headless: false,
+          headless: true,
           Viewport: { width: 1920, height: 1080, deviceScaleFactor: 2 },
         },
       });
