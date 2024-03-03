@@ -58,6 +58,8 @@ export const authenticate = async (req, res) => {
       res.send(`<img src=${await toDataURL(qr)} alt="QR Code" />`);
     });
 
+    console.log("-+");
+
     clientEvents(client, client_id);
   } catch (error) {
     console.log("error", error);
