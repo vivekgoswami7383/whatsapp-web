@@ -146,7 +146,7 @@ function clientEvents(client, client_id) {
     });
     if (!handleMessageResponse.success || !handleMessageResponse.data) return;
 
-    client.sendMessage(message.from, handleMessageResponse.data);
+    // client.sendMessage(message.from, handleMessageResponse.data);
   });
 
   client.on("disconnected", (reason) => {
